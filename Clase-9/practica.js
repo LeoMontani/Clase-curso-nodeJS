@@ -202,3 +202,25 @@
 //   }
 // }
 // console.log(pelicula.informacion());
+
+// Actividad de objetos 2
+
+let calculadora = {
+  sumar : function () {
+    let operacionSuma = 42 + 51;
+    console.log(operacionSuma);
+  },
+  restar : function () {
+    let operacionResta = 72 - 31;
+    console.log(operacionResta);
+  },
+  multiplicar : function () {
+    let operacionMultiplicacion = 13 * 379;
+    console.log(operacionMultiplicacion);
+  },
+  dividir : function () {
+    let operacionDivision = 42 / 12;
+    console.log(operacionDivision);
+  }
+}
+console.log(calculadora.dividir());
