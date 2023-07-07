@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+  color: rgb(128, 2, 23);
+  background-color: #0000ff;
+}
+li {
+  list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+ul {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+}
+.accion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:rgb(245, 139, 0);
+}
+.terror {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(33, 52, 52);
+}
+.fantasia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(189, 255, 9);
+}
+.drama {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(132, 52, 206);
+}
+a:hover {
+  text-decoration: underline;
+  color: #0000ff;
+}
