@@ -224,3 +224,40 @@
 //   }
 // }
 // console.log(calculadora.dividir());
+
+// Actividad con el método split
+
+// let laPalabraMasLarga = "";
+// function encontrarPalabraMasLarga (palabra) {
+//   let arrayDePalabras = palabra.split (" ");
+//   for (let palabrasSeparadas of arrayDePalabras) {
+//     if (palabrasSeparadas.length > laPalabraMasLarga.length) {
+//       laPalabraMasLarga = palabrasSeparadas;
+//     }
+//   }
+//   console.log(laPalabraMasLarga);
+// }
+// encontrarPalabraMasLarga("El elefante es un muy grande");
+
+// Actividad de objetos 3
+
+// let persona1 = {
+//   nombre: "Pedro",
+//   edad: 15
+// };
+
+// let persona2 = {
+//   nombre: "Ana",
+//   edad: 28
+// };
+
+// function esMayorDeEdad (personas) {
+//   if (personas.edad > 18) {
+//     console.log(`${personas.nombre} es mayor de edad`);
+//   }
+//   else {
+//     console.log(`${personas.nombre} no es mayor de edad`);
+//   }
+// }
+// esMayorDeEdad(persona1);
+// esMayorDeEdad(persona2);
