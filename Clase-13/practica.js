@@ -360,64 +360,66 @@
 // });
 // actualizarLista();
 
-const formularioEmail = document.getElementById("formulario-email");
-const usuariosRegistrados = document.getElementById("lista");
+// Clase 13
 
-let idNuevo = 3;
-let usuarios = [{
-  id: 1,
-  email: "sofia@gmail.com",
-  contraseña: "sofia123"
-},
-{
-  id: 2,
-  email: "sara@gmail.com",
-  contraseña: "sara123"
-}];
+// const formularioEmail = document.getElementById("formulario-email");
+// const usuariosRegistrados = document.getElementById("lista");
 
-function actualizarUsuarios() {
-  usuariosRegistrados.innerHTML = "";
-  usuarios.forEach((usuario) => {
-    let listItems = document.createElement("li");
-    usuariosRegistrados.appendChild(listItems);
-    listItems.innerHTML = `id: ${usuario.id} <br> email: ${usuario.email} <br> contraseña: ${usuario.contraseña}`;
+// let idNuevo = 3;
+// let usuarios = [{
+//   id: 1,
+//   email: "sofia@gmail.com",
+//   contraseña: "sofia123"
+// },
+// {
+//   id: 2,
+//   email: "sara@gmail.com",
+//   contraseña: "sara123"
+// }];
 
-  });
-};
+// function actualizarUsuarios() {
+//   usuariosRegistrados.innerHTML = "";
+//   usuarios.forEach((usuario) => {
+//     let listItems = document.createElement("li");
+//     usuariosRegistrados.appendChild(listItems);
+//     listItems.innerHTML = `id: ${usuario.id} <br> email: ${usuario.email} <br> contraseña: ${usuario.contraseña}`;
 
-formularioEmail.addEventListener("submit", (e) => {
-  e.preventDefault();
-  let email = formularioEmail["email"].value;
-  let contraseña = formularioEmail["contraseña"].value;
-  let nuevoUsuario = {
-    email: email,
-    contraseña: contraseña,
-    id: idNuevo++
-  };
+//   });
+// };
 
-  if (nuevoUsuario.email === "") {
-    alert("Debe poner un email");
-    return
-  }
-  if (nuevoUsuario.contraseña === "") {
-    alert("Debe poner una contraseña");
-    return
-  }
-  if (nuevoUsuario.email.length <= 10) {
-    alert("El email debe contener más de 10 caracteres");
-    return
-  }
-  if (nuevoUsuario.contraseña.length <= 3) {
-    alert("La contraseña debe contener más de 3 caracteres");
-    return
-  }
-  if (usuarios.some((usuario) => usuario.email === email))
-    {
-    alert("El usuario ya existe");
-    return
-  } 
+// formularioEmail.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   let email = formularioEmail["email"].value;
+//   let contraseña = formularioEmail["contraseña"].value;
+//   let nuevoUsuario = {
+//     email: email,
+//     contraseña: contraseña,
+//     id: idNuevo++
+//   };
 
-  usuarios.push(nuevoUsuario);
-  actualizarUsuarios();
-})
-actualizarUsuarios();
+//   if (nuevoUsuario.email === "") {
+//     alert("Debe poner un email");
+//     return
+//   }
+//   if (nuevoUsuario.contraseña === "") {
+//     alert("Debe poner una contraseña");
+//     return
+//   }
+//   if (nuevoUsuario.email.length <= 10) {
+//     alert("El email debe contener más de 10 caracteres");
+//     return
+//   }
+//   if (nuevoUsuario.contraseña.length <= 3) {
+//     alert("La contraseña debe contener más de 3 caracteres");
+//     return
+//   }
+//   if (usuarios.some((usuario) => usuario.email === email))
+//     {
+//     alert("El usuario ya existe");
+//     return
+//   } 
+
+//   usuarios.push(nuevoUsuario);
+//   actualizarUsuarios();
+// })
+// actualizarUsuarios();
