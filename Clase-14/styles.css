@@ -1,0 +1,28 @@
+body {
+  background-color: #ffb6c1;
+}
+h1 {
+  color: #bc8bc4;
+}
+.email-form-container {
+  display: flex;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+}
+.form-inputs label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.register-button {
+  margin-top: 10px;
+}
+.user-container li{
+  list-style: circle;
+}
