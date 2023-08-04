@@ -426,33 +426,45 @@
 
 // Promesas APIs y Fetch
 
-const ulElement = document.getElementById("json-users");
+// const ulElement = document.getElementById("json-users");
 
-function mostrarInfoDeUsuario (id) {
-  let nuevoID = 1;
-  id = nuevoID;
-  console.log(id);
-}
+// function mostrarInfoDeUsuario (id) {
+//   let nuevoID = 1;
+//   id = nuevoID;
+//   console.log(id);
+// }
 
-fetch('https://jsonplaceholder.typicode.com/users')
-      .then(response => response.json())
-      .then(users => {
-        console.log(users);
-        users.forEach(user => {
-          let liElement = document.createElement("li");
-          let buttons = document.createElement("button");
-          buttons.innerText = user.name;
-          liElement.appendChild(buttons);
-          ulElement.appendChild(liElement);
+// fetch('https://jsonplaceholder.typicode.com/users')
+//       .then(response => response.json())
+//       .then(users => {
+//         console.log(users);
+//         users.forEach(user => {
+//           let liElement = document.createElement("li");
+//           let buttons = document.createElement("button");
+//           buttons.innerText = user.name;
+//           liElement.appendChild(buttons);
+//           ulElement.appendChild(liElement);
 
-          buttons.addEventListener("click", (e) =>{
-            fetch("https://jsonplaceholder.typicode.com/albums?userId=4")
-            .then(res => res.json())
-            .then(idReemplazo => {
-              mostrarInfoDeUsuario = idReemplazo.userID
-            })
-            console.log(`id: ${idReemplazo}`);
-          });
-        });
-      });
-      
+//           buttons.addEventListener("click", (e) =>{
+//             fetch("https://jsonplaceholder.typicode.com/albums?userId=4")
+//             .then(res => res.json())
+//             .then(idReemplazo => {
+//               mostrarInfoDeUsuario = idReemplazo.userID
+//             })
+//             console.log(`id: ${idReemplazo}`);
+//           });
+//         });
+//       });
+
+// Clase 17
+
+const formularioNuevo = document.getElementById("formulario-nuevo");
+
+
+formularioNuevo.addEventListener("submit", (e) =>{
+  e.preventDefault();
+  let titulo = formularioNuevo["title"].value;
+  let body = formularioNuevo["body"].value;
+  let userId = formularioNuevo["userId"].value;
+  console.log({titulo, body, userId});
+})
