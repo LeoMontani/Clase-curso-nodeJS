@@ -440,17 +440,24 @@
 //       liElement.appendChild(buttons);
 //       ulElement.appendChild(liElement);
 
-//       buttons.addEventListener("click", () =>{
-//         console.log(user.id);
-//         mostrarInfoDeUsuario(user.id);
-//         })
+// fetch('https://jsonplaceholder.typicode.com/users')
+//       .then(response => response.json())
+//       .then(users => {
+//         console.log(users);
+//         users.forEach(user => {
+//           let liElement = document.createElement("li");
+//           let buttons = document.createElement("button");
+//           buttons.innerText = user.name;
+//           liElement.appendChild(buttons);
+//           ulElement.appendChild(liElement);
+
+//           buttons.addEventListener("click", (e) =>{
+//             fetch("https://jsonplaceholder.typicode.com/albums?userId=4")
+//             .then(res => res.json())
+//             .then(idReemplazo => {
+//               mostrarInfoDeUsuario = idReemplazo.userID
+//             })
+//             console.log(`id: ${idReemplazo}`);
+//           });
+//         });
 //       });
-//     });
-  
-//   const mostrarInfoDeUsuario = (id) =>{
-//     fetch("https://jsonplaceholder.typicode.com/albums?userId=" + id)
-//     .then(response => response.json())
-//     .then((albums) =>{
-//       console.log(albums);
-//     })
-//   }
