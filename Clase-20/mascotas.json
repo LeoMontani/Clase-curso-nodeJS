@@ -1,0 +1,6 @@
+[
+  { "nombre": "Charly", "animal": "Perro", "edad": "1", "perdido": false },
+  { "nombre": "Tom", "animal": "Gato", "edad": "5", "perdido": true },
+  { "nombre": "Jero", "animal": "Perro", "edad": "11", "perdido": false },
+  { "nombre": "Benji", "animal": "Perro", "edad": "4", "perdido": true }
+]

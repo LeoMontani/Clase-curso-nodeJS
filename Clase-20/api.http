@@ -1,0 +1,17 @@
+GET http://localhost:3000/mascotas?animal=Perro
+
+###
+
+GET http://localhost:3000/mascotas/Tom
+
+###
+
+POST http://localhost:3000/mascotas
+content-type: application/json
+
+{
+  "nombre": "Morena",
+  "animal": "Perro",
+  "edad": 7,
+  "perdido": false
+}
