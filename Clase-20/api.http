@@ -12,6 +12,6 @@ content-type: application/json
 {
   "nombre": "Morena",
   "animal": "Perro",
-  "edad": 7,
+  "edad": 8,
   "perdido": false
 }

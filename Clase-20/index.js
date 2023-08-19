@@ -42,8 +42,8 @@ app.post("/mascotas", async (req, res) => {
     const error = await fs.writeFile("./mascotas.json", JSON.stringify(mascotas));
     if (error) { res.json({ error: "No se pudo guardar la mascota" }) }
     res.json({ mensaje: "Mascota guardada" });
-})
+});
 
 app.listen(3000, () => {
-    console.log("Servidor corriendo");
-})
+   console.log("Servidor corriendo");
+});
