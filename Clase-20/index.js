@@ -1,6 +1,10 @@
 const express = require("express");
 const app = express();
-const fs = require("fs/promises")
+const fs = require("fs/promises");
+
+// middleware
+
+app.use(express.json());
 // let usuarios = [
 //     { id: 1, nombre: "Leo", apellido: "Montani", profesion: "Programador" },
 //     { id: 2, nombre: "Juan", apellido: "Perez", profesion: "Bombero" },
