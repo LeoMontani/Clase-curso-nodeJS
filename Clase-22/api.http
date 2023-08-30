@@ -1,0 +1,10 @@
+POST http://localhost:4040/products
+Content-Type: application/json
+
+{
+  "nombre": "naranja",
+  "tipo": "comidad"
+}
+
+###
+GET http://localhost:4040/products
