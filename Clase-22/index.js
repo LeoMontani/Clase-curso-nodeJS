@@ -13,7 +13,7 @@ app.use(express.json());
 
 // app.get("/", (req, res) => {
 //   console.log("test");
-//   mongoose.connect("mongodb+srv://leonelmontani1:1M2A3C@cluster0.tlll7il.mongodb.net/")
+//   mongoose.connect("")
 //     .then(() => {
 //       console.log("Conectado a la base de datos");
 //     })
