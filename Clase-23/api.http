@@ -1,0 +1,22 @@
+POST http://localhost:4040/products
+Content-Type: application/json
+
+{
+  "nombre": "Silla",
+  "tipo": "Mueble"
+}
+
+###
+GET http://localhost:4040/products
+
+###
+PUT http://localhost:4040/products/64ee843e15c945a92e28b6dc
+Content-Type: application/json
+
+{
+  "nombre": "Televisor",
+  "tipo": "Electrodomésitco"
+}
+
+###
+DELETE http://localhost:4040/products/64f11ac3cd7d648246e958c7
