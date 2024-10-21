@@ -10,8 +10,8 @@ POST http://localhost:3000/mascotas
 content-type: application/json
 
 {
-  "nombre": "Morena",
+  "nombre": "Tutuca",
   "animal": "Perro",
-  "edad": 8,
+  "edad": 5,
   "perdido": false
 }
